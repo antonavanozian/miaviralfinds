@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mia | Viral Finds & Reviews ✨ (@miaviralfinds)</title>
+  <meta name="description" content="Shop 28 viral TikTok finds, high-ROI beauty tech, holy-grail K-skincare, cozy kitchen gadgets & ASMR squishies tested and approved by Mia (@miaviralfinds). Verified Amazon Associate & TikTok Shop storefront.">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="Mia | Viral Finds & Reviews ✨">
+  <meta property="og:description" content="Official storefront for @miaviralfinds. Shop all 28 tested viral products and 2026 Buyer's Guides from YouTube Shorts, TikTok & Instagram Reels.">
+  <meta property="og:type" content="website">
+  
+  <!-- CDN Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    :root {
+      --bg: #0b0c10;
+      --card-bg: rgba(255, 255, 255, 0.05);
+      --card-border: rgba(255, 255, 255, 0.1);
+      --accent-pink: #ff3b5c;
+      --accent-cyan: #20d5ec;
+      --amazon-gold: #ff9900;
+      --text: #ffffff;
+      --text-muted: #9ba1b0;
+      --font: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font);
+      display: flex;
+      justify-content: center;
+      padding: 32px 16px 80px 16px;
+      min-height: 100vh;
+      background-image: 
+        radial-gradient(circle at 50% 0%, rgba(255, 59, 92, 0.18) 0%, transparent 55%),
+        radial-gradient(circle at 85% 35%, rgba(32, 213, 236, 0.12) 0%, transparent 45%),
+        radial-gradient(circle at 15% 75%, rgba(255, 153, 0, 0.08) 0%, transparent 45%);
+      background-attachment: fixed;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 480px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 18px;
+    }
+
+    /* Profile Header */
+    .avatar-wrapper {
+      position: relative;
+      width: 104px;
+      height: 104px;
+    }
+
+    .avatar {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid rgba(255, 255, 255, 0.3);
+      box-shadow: 0 8px 30px rgba(255, 59, 92, 0.35);
+    }
+
+    .verified-badge {
+      position: absolute;
+      bottom: 2px;
+      right: 2px;
+      background: var(--accent-cyan);
+      color: #0b0c10;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: 800;
+      border: 2px solid var(--bg);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+    }
+
+    .profile-info {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .name {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: -0.3px;
+    }
+
+    .handle {
+      font-size: 14px;
+      color: var(--accent-pink);
+      font-weight: 600;
+    }
+
+    .bio {
+      font-size: 13.5px;
+      color: var(--text-muted);
+      line-height: 1.5;
+      max-width: 390px;
+      margin-top: 2px;
+    }
+
+    /* Social Pills */
+    .social-pills {
+      display: flex;
+      gap: 10px;
+      margin-top: 6px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .social-pill {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      color: var(--text);
+      text-decoration: none;
+      padding: 7px 14px;
+      border-radius: 20px;
+      font-size: 12.5px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      backdrop-filter: blur(8px);
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .social-pill:hover {
+      background: rgba(255, 255, 255, 0.14);
+      border-color: rgba(255, 255, 255, 0.3);
+      transform: translateY(-2px);
+    }
+
+    /* Verified Affiliate Banner */
+    .banner-aip {
+      width: 100%;
+      background: linear-gradient(135deg, rgba(255, 153, 0, 0.16), rgba(255, 59, 92, 0.14));
+      border: 1px solid rgba(255, 153, 0, 0.35);
+      padding: 13px 16px;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    }
+
+    .banner-aip i {
+      font-size: 26px;
+      color: var(--amazon-gold);
+      flex-shrink: 0;
+    }
+
+    .banner-text h4 { font-size: 13.5px; font-weight: 700; color: #fff; }
+    .banner-text p { font-size: 11.5px; color: var(--text-muted); margin-top: 2px; line-height: 1.35; }
+
+    /* Category Filter Pills */
+    .filter-bar {
+      display: flex;
+      gap: 8px;
+      width: 100%;
+      overflow-x: auto;
+      padding-bottom: 4px;
+      scrollbar-width: none;
+    }
+    .filter-bar::-webkit-scrollbar { display: none; }
+
+    .filter-btn {
+      padding: 8px 14px;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      color: var(--text-muted);
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.2s;
+    }
+
+    .filter-btn.active, .filter-btn:hover {
+      background: rgba(255, 255, 255, 0.15);
+      color: #fff;
+      border-color: rgba(255, 255, 255, 0.35);
+    }
+
+    /* Section Headings */
+    .section-title {
+      font-size: 13.5px;
+      font-weight: 800;
+      color: #e2e8f0;
+      text-transform: uppercase;
+      letter-spacing: 0.9px;
+      align-self: flex-start;
+      margin-top: 10px;
+      margin-bottom: -4px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* Product Cards */
+    .product-card {
+      width: 100%;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 18px;
+      padding: 16px 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 11px;
+      backdrop-filter: blur(12px);
+      transition: all 0.2s ease;
+      position: relative;
+    }
+
+    .product-card:hover {
+      transform: translateY(-2px);
+      border-color: rgba(255, 255, 255, 0.28);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+    }
+
+    .product-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .prod-tag {
+      font-size: 10.5px;
+      font-weight: 700;
+      color: var(--accent-pink);
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      background: rgba(255, 59, 92, 0.12);
+      padding: 3px 8px;
+      border-radius: 6px;
+      display: inline-block;
+      margin-bottom: 4px;
+    }
+
+    .tag-squishy { color: var(--accent-cyan); background: rgba(32, 213, 236, 0.12); }
+    .tag-kitchen { color: #34d399; background: rgba(52, 211, 153, 0.12); }
+
+    .prod-title {
+      font-size: 15.5px;
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 1.3;
+    }
+
+    .prod-desc {
+      font-size: 12.5px;
+      color: var(--text-muted);
+      line-height: 1.45;
+    }
+
+    /* Buttons */
+    .btn-row {
+      display: flex;
+      gap: 8px;
+      margin-top: 2px;
+      flex-wrap: wrap;
+    }
+
+    .shop-btn {
+      flex: 1;
+      min-width: 120px;
+      padding: 10px 12px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-size: 12.5px;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: all 0.18s ease;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .btn-amazon {
+      background: linear-gradient(135deg, rgba(255, 153, 0, 0.22), rgba(255, 153, 0, 0.12));
+      border: 1px solid rgba(255, 153, 0, 0.55);
+      color: #ffb84d;
+    }
+
+    .btn-amazon:hover {
+      background: linear-gradient(135deg, rgba(255, 153, 0, 0.4), rgba(255, 153, 0, 0.2));
+      border-color: #ffa41c;
+      color: #ffffff;
+      transform: translateY(-1px);
+    }
+
+    .btn-tiktok {
+      background: linear-gradient(135deg, rgba(32, 213, 236, 0.2), rgba(255, 59, 92, 0.2));
+      border: 1px solid rgba(32, 213, 236, 0.45);
+      color: #ffffff;
+    }
+
+    .btn-tiktok:hover {
+      background: linear-gradient(135deg, rgba(32, 213, 236, 0.35), rgba(255, 59, 92, 0.35));
+      border-color: var(--accent-cyan);
+      transform: translateY(-1px);
+    }
+
+    .btn-video {
+      flex: 0 0 auto;
+      padding: 10px 14px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      color: #ffffff;
+    }
+
+    .btn-video:hover {
+      background: rgba(255, 255, 255, 0.16);
+      border-color: rgba(255, 255, 255, 0.3);
+      color: #ffffff;
+    }
+
+    /* Business Card */
+    .business-card {
+      background: linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(168, 85, 247, 0.12));
+      border: 1px solid rgba(99, 102, 241, 0.45);
+    }
+
+    .business-btn {
+      width: 100%;
+      background: linear-gradient(135deg, #6366f1, #8b5cf6);
+      border: none;
+      color: #ffffff;
+      font-size: 13.5px;
+      box-shadow: 0 4px 16px rgba(99, 102, 241, 0.35);
+    }
+
+    .business-btn:hover {
+      background: linear-gradient(135deg, #4f46e5, #7c3aed);
+      box-shadow: 0 6px 22px rgba(99, 102, 241, 0.5);
+    }
+
+    /* Footer & FTC Disclosure */
+    .footer {
+      text-align: center;
+      margin-top: 14px;
+      padding: 12px 10px;
+      color: #64748b;
+      font-size: 11px;
+      line-height: 1.5;
+      max-width: 440px;
+    }
+
+    .footer a { color: #94a3b8; text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- Profile Avatar & Verified Badge -->
+    <div class="avatar-wrapper">
+      <img src="avatar.jpg" alt="Mia Viral Finds" class="avatar" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80'">
+      <div class="verified-badge"><i class="fa-solid fa-check"></i></div>
+    </div>
+
+    <!-- Creator Identity & Bio -->
+    <div class="profile-info">
+      <h1 class="name">Mia | Viral Finds & Reviews ✨</h1>
+      <span class="handle">@miaviralfinds</span>
+      <p class="bio">Testing viral TikTok finds, Korean glass skincare, cozy kitchen gadgets & ASMR squishies so you know what's actually worth it.</p>
+      
+      <!-- Verified Social Channels -->
+      <div class="social-pills">
+        <a href="https://www.youtube.com/@miaviralfinds" target="_blank" rel="noopener" class="social-pill">
+          <i class="fa-brands fa-youtube" style="color: #ff0000;"></i> YouTube Shorts
+        </a>
+        <a href="https://www.instagram.com/miaviralfinds" target="_blank" rel="noopener" class="social-pill">
+          <i class="fa-brands fa-instagram" style="color: #e1306c;"></i> Instagram Reels
+        </a>
+        <a href="https://www.tiktok.com/@mia.viral.finds" target="_blank" rel="noopener" class="social-pill">
+          <i class="fa-brands fa-tiktok"></i> TikTok
+        </a>
+        <a href="guides.html" class="social-pill" style="border-color: rgba(255, 153, 0, 0.5); background: rgba(255, 153, 0, 0.14); color: #ffb84d;">
+          <i class="fa-solid fa-book-open"></i> 2026 Buyer's Guides
+        </a>
+        <a href="dealroom.html" class="social-pill" style="border-color: rgba(32, 213, 236, 0.4); background: rgba(32, 213, 236, 0.12); color: #20d5ec;">
+          <i class="fa-solid fa-briefcase"></i> Media Kit &amp; Deal Room
+        </a>
+      </div>
+    </div>
+
+    <!-- Amazon Verified Associate Banner -->
+    <div class="banner-aip">
+      <i class="fa-brands fa-amazon"></i>
+      <div class="banner-text">
+        <h4>Verified Creator Recommendations</h4>
+        <p>Direct affiliate links to products tested on camera. 100% honest reviews. (Store ID: <strong>miafinds-20</strong>)</p>
+      </div>
+    </div>
+
+    <!-- Filter Bar -->
+    <div class="filter-bar">
+      <button class="filter-btn active" onclick="filterCategory('all', this)">All Products (28)</button>
+      <button class="filter-btn" onclick="filterCategory('highticket', this)">💎 High-Ticket Tech &amp; Pro (4)</button>
+      <button class="filter-btn" onclick="filterCategory('beauty', this)">🧴 K-Beauty &amp; Hair (14)</button>
+      <button class="filter-btn" onclick="filterCategory('kitchen', this)">🍳 Cozy Kitchen (7)</button>
+      <button class="filter-btn" onclick="filterCategory('squishy', this)">🥟 ASMR Squishies (7)</button>
+    </div>
+
+    <!-- ============================================== -->
+    <!-- SECTION 1: K-BEAUTY & VIRAL HAIR STYLING (14)  -->
+    <!-- ============================================== -->
+    <div class="section-title category-header" data-cat="beauty">
+      <i class="fa-solid fa-wand-magic-sparkles" style="color: var(--accent-pink);"></i> Viral Beauty, Devices &amp; Korean Skincare (14)
+    </div>
+
+    <!-- HIGH-TICKET 1: Medicube Age-R Booster Pro -->
+    <div class="product-card" data-category="beauty" data-highticket="true" style="border-color: rgba(255, 153, 0, 0.4);">
+      <div class="product-top">
+        <div>
+          <span class="prod-tag" style="color: #ffb84d; background: rgba(255, 153, 0, 0.16);">💎 High-ROI Beauty Tech • 6-in-1 Facial Device</span>
+          <h2 class="prod-title">Medicube Age-R Booster Pro 6-in-1 Glass Glow Device</h2>
+        </div>
+      </div>
+      <p class="prod-desc">Clinical electroporation, microcurrent, EMS, and sonic LED device that increases skincare absorption by 785% for poreless Korean glass skin without needles.</p>
+      <div class="btn-row">
+        <a href="https://www.youtube.com/shorts/vB4b9rYN7qU" target="_blank" rel="noopener" class="shop-btn btn-video" title="Watch Video Review">
+          <i class="fa-solid fa-play"></i> Watch
+        </a>
+        <a href="https://www.amazon.com/dp/B0CWK5M7P6?tag=miafinds-20" target="_blank" rel="noopener" class="shop-btn btn-amazon">
+          <i class="fa-brands fa-amazon"></i> Buy on Amazon ($228.00)
+        </a>
+        <a href="guides.html#guide-beauty-tech" class="shop-btn btn-tiktok">
+          <i class="fa-solid fa-scale-balanced"></i> Read Review
+        </a>
+      </div>
+    </div>
+
+    <!-- HIGH-TICKET 2: Shark FlexStyle Air Styling System -->
+    <div class="product-card" data-category="beauty" data-highticket="true" style="border-color: rgba(255, 153, 0, 0.4);">
+      <div class="product-top">
+        <div>
+          <span class="prod-tag" style="color: #ffb84d; background: rgba(255, 153, 0, 0.16);">💎 Best Airwrap Alternative • Zero Heat Damage</span>
+          <h2 class="prod-title">Shark FlexStyle Air Styling &amp; Drying System (Multi-Styler)</h2>
+        </div>
+      </div>
+      <p class="prod-desc">Rotates from a high-speed hair dryer to a Coanda auto-wrap curler and blowout brush in one click. Regulates heat 1,000x/sec for salon volume with zero heat damage.</p>
+      <div class="btn-row">
+        <a href="https://www.youtube.com/shorts/g24ap9WnfEU" target="_blank" rel="noopener" class="shop-btn btn-video" title="Watch Video Review">
+          <i class="fa-solid fa-play"></i> Watch
+        </a>
+        <a href="https://www.amazon.com/dp/B0B89P16MC?tag=miafinds-20" target="_blank" rel="noopener" class="shop-btn btn-amazon">
+          <i class="fa-brands fa-amazon"></i> Buy on Amazon ($299.99)
+        </a>
+        <a href="guides.html#guide-beauty-tech" class="shop-btn btn-tiktok">
+          <i class="fa-solid fa-scale-balanced"></i> Compare Tech
+        </a>
+      </div>
+    </div>
+
+    <!-- HIGH-TICKET 3: K18 Leave-In Molecular Repair Hair Mask Pro -->
+    <div class="product-card" data-category="beauty" data-highticket="true" style="border-color: rgba(255, 153, 0, 0.4);">
+      <div class="product-top">
+        <div>
+          <span class="prod-tag" style="color: #ffb84d; background: rgba(255, 153, 0, 0.16);">💎 Salon Pro Size (150ml) • 4-Min Peptide Repair</span>
+          <h2 class="prod-title">K18 Leave-In Molecular Repair Hair Mask Pro (150ml Value Size)</h2>
+        </div>
+      </div>
+      <p class="prod-desc">Patented K18Peptide reverses bleach, color, and thermal damage at the molecular level in 4 minutes flat. No rinse required—replaces conditioner on wash day.</p>
+      <div class="btn-row">
+        <a href="https://www.amazon.com/dp/B0961Z8M6V?tag=miafinds-20" target="_blank" rel="noopener" class="shop-btn btn-amazon">
+          <i class="fa-brands fa-amazon"></i> Buy on Amazon ($129.00)
+        </a>
+        <a href="guides.html#guide-beauty-tech" class="shop-btn btn-tiktok">
+          <i class="fa-solid fa-book-open"></i> Buyer's Guide
+        </a>
+      </div>
+    </div>
+
+    <!-- 1. Wavytalk Thermal Brush -->
+    <div class="product-card" data-category="beauty">
+      <div class="product-top">
+        <div>
+          <span class="prod-tag">Viral Hair Styling • 10-Min Blowout</span>
+          <h2 class="prod-title">Wavytalk Blowout Boost Thermal Brush (1.5")</h2>
+        </div>
+      </div>
+      <p class="prod-desc">Ionic ceramic thermal barrel with digital temp control. Delivers bouncy blowout curls with zero frizz and no loud blow-dryer noise.</p>
+      <div class="btn-row">
+        <a href="https://www.youtube.com/shorts/g24ap9WnfEU" target="_blank" rel="noopener" class="shop-btn btn-video" title="Watch Video Review">
+          <i class="fa-solid fa-play"></i> Watch
+        </a>
+        <a href="https://www.amazon.com/dp/B0CKL6M8K3?tag=miafinds-20" target="_blank" rel="noopener" class="shop-btn btn-amazon">
+          <i class="fa-brands fa-amazon"></i> Buy on Amazon ($45.99)
+        </a>
+        <a href="https://www.tiktok.com/@wavytalkofficial" target="_blank" rel="noopener" class="shop-btn btn-tiktok">
+          <i class="fa-brands fa-tiktok"></i> TikTok Shop
+        </a>
+      </div>
+    </div>
+
+    <!-- 2. Medicube Zero Pore Pad 2.0 -->
+    <div class="product-card" data-category="beauty">
+      <div class="product-top">
+        <div>
+          <span class="prod-tag">Korean Glass Skincare • Dual Textured</span>
+          <h2 class="prod-title">Medicube Zero Pore Pad 2.0 (AHA/BHA Toner)</h2>
+        </div>
+      </div>
+      <p class="prod-desc">Dual-textured toning pads that dissolve deep sebum plugs and minimize visible pores. 1 pad gives you instant glass skin glow.</p>
+      <div class="btn-row">
+        <a href="https://www.youtube.com/shorts/vB4b9rYN7qU" target="_blank" rel="noopener" class="shop-btn btn-video" title="Watch Video Review">
+          <i class="fa-solid fa-play"></i> Watch
+        </a>
+        <a href="https://www.amazon.com/dp/B07T2R197W?tag=miafinds-20" target="_blank" rel="noopener" class="shop-btn btn-amazon">
+          <i class="fa-brands fa-amazon"></i> Buy on Amazon ($24.99)
+        </a>
+        <a href="https://www.tiktok.com/@medicube_official" target="_blank" rel="noopener" class="shop-btn btn-tiktok">
+          <i class="fa-brands fa-tiktok"></i> TikTok Shop
+        </a>
+      </div>
+    </div>
+
+    <!-- 3. Biodance Collagen Mask -->
+    <div class="product-card" data-category="beauty">
+      <div class="product-top">
+        <div>
+          <span class="prod-tag">Viral Overnight Mask • Real Collagen</span>
+          <h2 class="prod-title">Biodance Bio-Collagen Real Deep Mask (4-Pack)</h2>
+        </div>
+      </div>
+      <p class="prod-desc">Oligo-hyaluronic acid collagen hydrogel mask that turns 100% transparent by morning as nutrients absorb deep into pores.</p>
+      <div class="btn-row">
+        <a href="https://www.youtube.com/shorts/MtGJs6Y8vNo" target="_blank" rel="noopener" class="shop-btn btn-video" title="Watch Video Review">
+          <i class="fa-solid fa-play"></i> Watch
+        </a>
+        <a href="https://www.amazon.com/dp/B09CPT53CV?tag=miafinds-20" target="_blank" rel="noopener" class="shop-btn btn-amazon">
+          <i class="fa-brands fa-amazon"></i> Buy on Amazon ($19.00)
+        </a>
+        <a href="https://www.tiktok.com/@biodance_usa" target="_blank" rel="noopener" class="shop-btn btn-tiktok">
+          <i class="fa-brands fa-tiktok"></i> TikTok Shop
+        </a>
+      </div>
+    </div>
+
+    <!-- 4. COSRX Advanced Snail 96 Mucin Essence -->
+    <div class="product-card" data-category="beauty">
+      <div class="product-top">
+        <div>
+          <span class="prod-tag">Holy Grail Hydration • Barrier Repair</span>
+          <h2 class="prod-title">COSRX Advanced Snail 96 Mucin Power Essence</h2>
+        </div>
+      </div>
+      <p class="prod-desc">96.3% snail secretion filtrate that absorbs instantly to repair damaged moisture barriers and fade acne scars for healthy glow.</p>
+      <div class="btn-row">
+        <a href="https://www.amazon.com/dp/B00PBX3L7K?tag=miafinds-20" target="_blank" rel="noopener" class="shop-btn btn-amazon">
+          <i class="fa-brands fa-amazon"></i> Buy on Amazon ($15.99)
+        </a>
+        <a href="https://www.tiktok.com/@cosrx_official" target="_blank" rel="noopener" class="shop-btn btn-tiktok">
+          <i class="fa-brands fa-tiktok"></i> TikTok Shop
+        </a>
+      </div>
+    </div>
+
+    <!-- 5. Sacheu Lip Liner STAY-N -->
+    <div class="product-card" data-category="beauty">
+      <div class="product-top">
+        <div>
+          <span class="prod-tag">Peel-Off Tattoo • 12-Hour Smudge-Proof</span>
+          <h2 class="prod-title">Sacheu Lip Stain STAY-N (Peel-Off Lip Liner)</h2>
+        </div>
+      </div>
+      <p class="prod-desc">Infused with hyaluronic acid and vitamin E. Line your lips, wait 10 minutes, and peel off for an all-day smudge-proof tint.</p>
+      <div class="btn-row">
+        <a href="https://youtube.com/shorts/nv-26rPUD9c" target="_blank" rel="noopener" class="shop-btn btn-video" title="Watch Video Review">
+          <i class="fa-solid fa-play"></i> Watch
+        </a>
+        <a href="https://www.amazon.com/dp/B0B69V9348?tag=miafinds-20" target="_blank" rel="noopener" class="shop-btn btn-amazon">
+          <i class="fa-brands fa-amazon"></i> Buy on Amazon ($12.00)
+        </a>
+        <a href="https://www.tiktok.com/@sacheubeauty" target="_blank" rel="noopener" class="shop-btn btn-tiktok">
+          <i class="fa-brands fa-tiktok"></i> TikTok Shop
+        </a>
+      </div>
+    </div>
+
+    <!-- 6. Anua Heartleaf 77% Soothing Toner -->
+    <div class="product-card" data-category="beauty">
+      <div class="product-top">
+        <div>
+          <span class="prod-tag">Viral Calming Toner • Sensitive Skin</span>
+          <h2 class="prod-title">Anua Heartleaf Toner & Pore Control Cleansing Oil</h2>
+        </div>
+      </div>
+      <p class="prod-desc">Korea's #1 soothing toner packed with 77% heartleaf extract. Instantly cools angry breakouts and calms redness.</p>
+      <div class="btn-row">
+        <a href="https://www.amazon.com/dp/B0832NG5D9?tag=miafinds-20" target="_blank" rel="noopener" class="shop-btn btn-amazon">
+          <i class="fa-brands fa-amazon"></i> Buy on Amazon ($19.80)
+        </a>
+        <a href="https://www.tiktok.com/@anua_kr" target="_blank" rel="noopener" class="shop-btn btn-tiktok">
+          <i class="fa-brands fa-tiktok"></i> TikTok Shop
+        </a>
+      </div>
+    </div>
+
+
+    <!-- 7. Kitsch Satin Heatless Curling Set -->
+    <div class="product-card" data-category="beauty">
+      <div class="product-top">
+        <div>
+          <span class="prod-tag">Overnight Curls • Zero Heat Damage</span>
+          <h2 class="prod-title">Kitsch Satin Heatless Curling Set</h2>
+        </div>
+      </div>
+      <p class="prod-desc">Soft satin curling rod and scrunchies that create bouncy, frizz-free curls overnight on 90% dry hair without any heat damage.</p>
+      <div class="btn-row">
+        <a href="https://www.amazon.com/dp/B096WG8Q74?tag=miafinds-20" target="_blank" rel="noopener" class="shop-btn btn-amazon">
+          <i class="fa-brands fa-amazon"></i> Buy on Amazon ($15.99)
+        </a>
+        <a href="https://www.tiktok.com/@mykitsch" target="_blank" rel="noopener" class="shop-btn btn-tiktok">
+          <i class="fa-brands fa-tiktok"></i> TikTok Shop
+        </a>
+      </div>
+    </div>
+
+    <!-- 8. Color Wow Dream Coat Supernatural Spray -->
+    <div class="product-card" data-category="beauty">
+      <div class="product-top">
+        <div>
+          <span class="prod-tag">Anti-Frizz Shield • Glass Hair Finish</span>
+          <h2 class="prod-title">Color Wow Dream Coat Supernatural Spray</h2>
+        </div>
+      </div>
+      <p class="prod-desc">Heat-activated anti-humidity polymer spray that waterproofs hair strands for a sleek, glossy finish that lasts through 3-4 washes.</p>
+      <div class="btn-row">
+        <a href="https://www.amazon.com/dp/B073CWSQ51?tag=miafinds-20" target="_blank" rel="noopener" class="shop-btn btn-amazon">
+          <i class="fa-brands fa-amazon"></i> Buy on Amazon ($28.00)
+        </a>
+        <a href="https://www.tiktok.com/@colorwowhair" target="_blank" rel="noopener" class="shop-btn btn-tiktok">
+          <i class="fa-brands fa-tiktok"></i> TikTok Shop
+        </a>
+      </div>
+    </div>
+
+    <!-- 9. Laneige Lip Sleeping Mask -->
+    <div class="product-card" data-category="beauty">
+      <div class="product-top">
+        <div>
+          <span class="prod-tag">Overnight Lip Care • Berry Complex</span>
+          <h2 class="prod-title">Laneige Lip Sleeping Mask (Berry)</h2>
+        </div>
+      </div>
+      <p class="prod-desc">Antioxidant-rich berry fruit complex, murumuru seed, and shea butter balm that melts stubborn dry flakes while you sleep.</p>
+      <div class="btn-row">
+        <a href="https://www.amazon.com/dp/B07XXPHQZK?tag=miafinds-20" target="_blank" rel="noopener" class="shop-btn btn-amazon">
+          <i class="fa-brands fa-amazon"></i> Buy on Amazon ($24.00)
+        </a>
+        <a href="https://www.tiktok.com/@laneige_us" target="_blank" rel="noopener" class="shop-btn btn-tiktok">
+          <i class="fa-brands fa-tiktok"></i> TikTok Shop
+        </a>
+      </div>
+    </div>
+
+    <!-- 10. Milk Cooling Water Jelly Tint & Hydro Grip Primer -->
+    <div class="product-card" data-category="beauty">
+      <div class="product-top">
+        <div>
+          <span class="prod-tag">Viral Jelly Stain • 12-Hour Makeup Grip</span>
+          <h2 class="prod-title">Milk Cooling Water Jelly Tint & Hydro Grip Primer</h2>
+        </div>
+      </div>
+      <p class="prod-desc">Bouncy vegan collagen jelly lip & cheek stain paired with blue agave gripping primer for dewy, budge-proof all-day wear.</p>
+      <div class="btn-row">
+        <a href="https://www.amazon.com/dp/B084STP6B1?tag=miafinds-20" target="_blank" rel="noopener" class="shop-btn btn-amazon">
+          <i class="fa-brands fa-amazon"></i> Buy on Amazon ($24.00)
+        </a>
+        <a href="https://www.tiktok.com/@milkmakeup" target="_blank" rel="noopener" class="shop-btn btn-tiktok">
+          <i class="fa-brands fa-tiktok"></i> TikTok Shop
+        </a>
+      </div>
+    </div>
+
+    <!-- 11. Too Faced Lip Injection & Better Than Sex Mascara -->
+    <div class="product-card" data-category="beauty">
+      <div class="product-top">
+        <div>
+          <span class="prod-tag">Instant Plump • Hourglass Volume</span>
+          <h2 class="prod-title">Too Faced Lip Injection & Better Than Sex Mascara</h2>
+        </div>
+      </div>
+      <p class="prod-desc">High-gloss plumping lipgloss and hourglass-brush mascara with film-forming polymers for dramatic fullness and curled lashes.</p>
+      <div class="btn-row">
+        <a href="https://www.amazon.com/dp/B00J56BBA8?tag=miafinds-20" target="_blank" rel="noopener" class="shop-btn btn-amazon">
+          <i class="fa-brands fa-amazon"></i> Buy on Amazon ($29.00)
+        </a>
+        <a href="https://www.tiktok.com/@toofaced" target="_blank" rel="noopener" class="shop-btn btn-tiktok">
+          <i class="fa-brands fa-tiktok"></i> TikTok Shop
+        </a>
+      </div>
+    </div>
+
+    <!-- ============================================== -->
+    <!-- SECTION 2: COZY KITCHEN & COOKING GADGETS (7)  -->
+    <!-- ============================================== -->
+    <div class="section-title category-header" data-cat="kitchen">
+      <i class="fa-solid fa-kitchen-set" style="color: #34d399;"></i> Cozy Kitchen &amp; Cooking ASMR (7)
+    </div>
+
+    <!-- HIGH-TICKET 4: Ninja CREAMi Ice Cream Maker -->
+    <div class="product-card" data-category="kitchen" data-highticket="true" style="border-color: rgba(255, 153, 0, 0.4);">
+      <div class="product-top">
+        <div>
+          <span class="prod-tag tag-kitchen" style="color: #ffb84d; background: rgba(255, 153, 0, 0.16);">💎 #1 Viral Countertop Appliance • 7-in-1</span>
+          <h2 class="prod-title">Ninja CREAMi Ice Cream, Gelato &amp; Protein Sorbet Maker</h2>
+        </div>
+      </div>
+      <p class="prod-desc">Turns frozen protein shakes, fruit, or dairy bases into ultra-thick creamery ice cream, smoothie bowls, and sorbet in 90 seconds at the touch of a button.</p>
+      <div class="btn-row">
+        <a href="https://www.amazon.com/dp/B08QXB9BH5?tag=miafinds-20" target="_blank" rel="noopener" class="shop-btn btn-amazon">
+          <i class="fa-brands fa-amazon"></i> Buy on Amazon ($199.99)
+        </a>
+        <a href="guides.html#guide-kitchen" class="shop-btn btn-tiktok">
+          <i class="fa-solid fa-book-open"></i> Kitchen Guide
+        </a>
+      </div>
+    </div>
+
+    <!-- 7. 2-in-1 Olive Oil Sprayer & Dispenser -->
+    <div class="product-card" data-category="kitchen">
+      <div class="product-top">
+        <div>
+          <span class="prod-tag tag-kitchen">Kitchen ASMR • Zero Drip</span>
+          <h2 class="prod-title">2-in-1 Gravity Auto-Flip Olive Oil Mister & Pourer</h2>
+        </div>
+      </div>
+      <p class="prod-desc">Auto-flips to pour without greasy drips when tilted, and sprays a super-fine pressurized olive oil mist with a single trigger click.</p>
+      <div class="btn-row">
+        <a href="https://www.youtube.com/shorts/yiTFdbvnB5g" target="_blank" rel="noopener" class="shop-btn btn-video" title="Watch Video Review">
+          <i class="fa-solid fa-play"></i> Watch
+        </a>
+        <a href="https://www.amazon.com/dp/B0D1K97M8J?tag=miafinds-20" target="_blank" rel="noopener" class="shop-btn btn-amazon">
+          <i class="fa-brands fa-amazon"></i> Buy on Amazon ($16.99)
+        </a>
+        <a href="https://www.tiktok.com/@homestyle_us" target="_blank" rel="noopener" class="shop-btn btn-tiktok">
+          <i class="fa-brands fa-tiktok"></i> TikTok Shop
+        </a>
+      </div>
+    </div>
+
+    <!-- 8. FreshJuice Portable Blender -->
+    <div class="product-card" data-category="kitchen">
+      <div class="product-top">
+        <div>
+          <span class="prod-tag tag-kitchen">Aesthetic Smoothie Maker • USB-C</span>
+          <h2 class="prod-title">FreshJuice Rechargeable Portable Blender (Pink)</h2>
+        </div>
+      </div>
+      <p class="prod-desc">Aesthetic bottle blender that crushes frozen fruit and ice in 30 seconds. Waterproof base with magnetic wireless charging dock.</p>
+      <div class="btn-row">
+        <a href="https://www.amazon.com/s?k=fresh+juice+portable+blender&tag=miafinds-20" target="_blank" rel="noopener" class="shop-btn btn-amazon">
+          <i class="fa-brands fa-amazon"></i> Buy on Amazon ($34.99)
+        </a>
+        <a href="https://www.tiktok.com/@freshjuice_official" target="_blank" rel="noopener" class="shop-btn btn-tiktok">
+          <i class="fa-brands fa-tiktok"></i> TikTok Shop
+        </a>
+      </div>
+    </div>
+
+    <!-- 9. Silicone Air Fryer Liners -->
+    <div class="product-card" data-category="kitchen">
+      <div class="product-top">
+        <div>
+          <span class="prod-tag tag-kitchen">Reusable Inserts • Easy Cleanup</span>
+          <h2 class="prod-title">Silicone Air Fryer Reusable Liner Baskets (2-Pack)</h2>
+        </div>
+      </div>
+      <p class="prod-desc">Food-grade silicone liners with bottom drainage ridges. Keeps your air fryer basket completely clean and dishwasher ready.</p>
+      <div class="btn-row">
+        <a href="https://www.amazon.com/s?k=silicone+air+fryer+liners+reusable&tag=miafinds-20" target="_blank" rel="noopener" class="shop-btn btn-amazon">
+          <i class="fa-brands fa-amazon"></i> Buy on Amazon ($14.99)
+        </a>
+        <a href="https://www.tiktok.com/@airfryessentials" target="_blank" rel="noopener" class="shop-btn btn-tiktok">
+          <i class="fa-brands fa-tiktok"></i> TikTok Shop
+        </a>
+      </div>
+    </div>
+
+    <!-- 10. Rapid Egg Cooker -->
+    <div class="product-card" data-category="kitchen">
+      <div class="product-top">
+        <div>
+          <span class="prod-tag tag-kitchen">One-Touch Breakfast • 7 Eggs</span>
+          <h2 class="prod-title">Rapid 7-Capacity Electric Egg Cooker & Poacher</h2>
+        </div>
+      </div>
+      <p class="prod-desc">Cooks up to 7 eggs to soft, medium, or hard-boiled perfection in minutes with automatic shut-off and buzzer alert.</p>
+      <div class="btn-row">
+        <a href="https://www.amazon.com/s?k=rapid+egg+cooker+7+capacity&tag=miafinds-20" target="_blank" rel="noopener" class="shop-btn btn-amazon">
+          <i class="fa-brands fa-amazon"></i> Buy on Amazon ($18.99)
+        </a>
+        <a href="https://www.tiktok.com/@dashstyledirect" target="_blank" rel="noopener" class="shop-btn btn-tiktok">
+          <i class="fa-brands fa-tiktok"></i> TikTok Shop
+        </a>
+      </div>
+    </div>
+
+    <!-- 11. Rotary Vegetable Slicer -->
+    <div class="product-card" data-category="kitchen">
+      <div class="product-top">
+        <div>
+          <span class="prod-tag tag-kitchen">Safe Meal Prep • 3 Interchangeable Drums</span>
+          <h2 class="prod-title">Rotary Multi-Blade Vegetable Slicer & Grater</h2>
+        </div>
+      </div>
+      <p class="prod-desc">Hand-crank mandoline drum that shreds blocks of cheese and slices cucumbers in seconds without hands ever touching the blade.</p>
+      <div class="btn-row">
+        <a href="https://www.amazon.com/s?k=rotary+cheese+grater+vegetable+slicer&tag=miafinds-20" target="_blank" rel="noopener" class="shop-btn btn-amazon">
+          <i class="fa-brands fa-amazon"></i> Buy on Amazon ($22.99)
+        </a>
+        <a href="https://www.tiktok.com/@mandolinepro" target="_blank" rel="noopener" class="shop-btn btn-tiktok">
+          <i class="fa-brands fa-tiktok"></i> TikTok Shop
+        </a>
+      </div>
+    </div>
+
+    <!-- 12. Viral Rotary Garlic Twister & Herb Chopper -->
+    <div class="product-card" data-category="kitchen">
+      <div class="product-top">
+        <div>
+          <span class="prod-tag tag-kitchen">Here's Your Bite • Zero Garlic Fingers</span>
+          <h2 class="prod-title">Viral Handheld Rotary Garlic Twister & Herb Mincer</h2>
+        </div>
+      </div>
+      <p class="prod-desc">Twists whole garlic cloves and fresh herbs into a fine aromatic mince in 3 seconds flat. No smelly sticky hands, no cutting boards, dishwasher safe.</p>
+      <div class="btn-row">
+        <a href="https://www.amazon.com/s?k=garlic+twister+herb+chopper&tag=miafinds-20" target="_blank" rel="noopener" class="shop-btn btn-amazon">
+          <i class="fa-brands fa-amazon"></i> Buy on Amazon ($14.99)
+        </a>
+        <a href="https://www.tiktok.com/@homestylekitchen" target="_blank" rel="noopener" class="shop-btn btn-tiktok">
+          <i class="fa-brands fa-tiktok"></i> TikTok Shop
+        </a>
+      </div>
+    </div>
+
+    <!-- ============================================== -->
+    <!-- SECTION 3: VIRAL ASMR SQUISHIES & FIDGETS (7)  -->
+    <!-- ============================================== -->
+    <div class="section-title category-header" data-cat="squishy">
+      <i class="fa-solid fa-cube" style="color: var(--accent-cyan);"></i> Viral ASMR Desk Squishies & Fidgets (7)
+    </div>
+
+    <!-- Jumbo Bread Squishy -->
+    <div class="product-card" data-category="squishy">
+      <div class="product-top">
+        <div>
+          <span class="prod-tag tag-squishy">PapaShop • 6-Second Slow Rise</span>
+          <h2 class="prod-title">Jumbo Bread Squishy (Slow-Rising Brioche Loaf)</h2>
+        </div>
+      </div>
+      <p class="prod-desc">High-density PU memory foam brioche toast loaf that flattens under a two-handed palm press and takes 6 full seconds to rise back up.</p>
+      <div class="btn-row">
+        <a href="https://www.tiktok.com/@papashop_squishy" target="_blank" rel="noopener" class="shop-btn btn-tiktok">
+          <i class="fa-brands fa-tiktok"></i> TikTok Shop
+        </a>
+        <a href="https://www.amazon.com/s?k=jumbo+slow+rising+bread+loaf+squishy&tag=miafinds-20" target="_blank" rel="noopener" class="shop-btn btn-amazon" title="Find on Amazon">
+          <i class="fa-brands fa-amazon"></i> Buy on Amazon ($13.99)
+        </a>
+      </div>
+    </div>
+
+    <!-- 12. PapaShop Giant Steamed Bao Squishy -->
+    <div class="product-card" data-category="squishy">
+      <div class="product-top">
+        <div>
+          <span class="prod-tag tag-squishy">PapaShop • Slow Rebound ASMR</span>
+          <h2 class="prod-title">Giant Steamed Bao Bun Elastic Memory Squishy</h2>
+        </div>
+      </div>
+      <p class="prod-desc">Ultra-satisfying slow-rebound memory dough with authentic steamed bao texture. Comes in a mini bamboo steamer case.</p>
+      <div class="btn-row">
+        <a href="https://www.youtube.com/shorts/SJI4b-sywuE" target="_blank" rel="noopener" class="shop-btn btn-video" title="Watch Video Review">
+          <i class="fa-solid fa-play"></i> Watch
+        </a>
+        <a href="https://www.tiktok.com/@papashop_squishy" target="_blank" rel="noopener" class="shop-btn btn-tiktok">
+          <i class="fa-brands fa-tiktok"></i> TikTok Shop
+        </a>
+        <a href="https://www.amazon.com/s?k=giant+steamed+bao+squishy&tag=miafinds-20" target="_blank" rel="noopener" class="shop-btn btn-amazon" title="Find on Amazon">
+          <i class="fa-brands fa-amazon"></i> Amazon
+        </a>
+      </div>
+    </div>
+
+    <!-- 13. Peeling Banana Squishy -->
+    <div class="product-card" data-category="squishy">
+      <div class="product-top">
+        <div>
+          <span class="prod-tag tag-squishy">WenQing • Tactile Sensory</span>
+          <h2 class="prod-title">Peeling Banana Tactile Silicone Fidget Toy</h2>
+        </div>
+      </div>
+      <p class="prod-desc">Silicone peel rolls all the way down just like a real banana, revealing the squishy rubber center. Maximum satisfying desk fidget.</p>
+      <div class="btn-row">
+        <a href="https://www.youtube.com/shorts/taf_09hgpDQ" target="_blank" rel="noopener" class="shop-btn btn-video" title="Watch Video Review">
+          <i class="fa-solid fa-play"></i> Watch
+        </a>
+        <a href="https://www.tiktok.com/@wenqingstrong329" target="_blank" rel="noopener" class="shop-btn btn-tiktok">
+          <i class="fa-brands fa-tiktok"></i> TikTok Shop
+        </a>
+        <a href="https://www.amazon.com/s?k=peeling+banana+squishy&tag=miafinds-20" target="_blank" rel="noopener" class="shop-btn btn-amazon" title="Find on Amazon">
+          <i class="fa-brands fa-amazon"></i> Amazon
+        </a>
+      </div>
+    </div>
+
+    <!-- 14. DuDu Taba Cat Paw Squishy -->
+    <div class="product-card" data-category="squishy">
+      <div class="product-top">
+        <div>
+          <span class="prod-tag tag-squishy">DuDu Taba • Flocking Powder</span>
+          <h2 class="prod-title">Super Slow-Rise Cat Paw Taba Squishy</h2>
+        </div>
+      </div>
+      <p class="prod-desc">Velvety flocked silicone finish that feels like a soft kitten paw with a deep, slow rebound squish. Addictive ASMR experience.</p>
+      <div class="btn-row">
+        <a href="https://www.youtube.com/shorts/V21Ddb-wJxI" target="_blank" rel="noopener" class="shop-btn btn-video" title="Watch Video Review">
+          <i class="fa-solid fa-play"></i> Watch
+        </a>
+        <a href="https://www.tiktok.com/@dudutabasquishy" target="_blank" rel="noopener" class="shop-btn btn-tiktok">
+          <i class="fa-brands fa-tiktok"></i> TikTok Shop
+        </a>
+        <a href="https://www.amazon.com/s?k=taba+squishy+cat+paw&tag=miafinds-20" target="_blank" rel="noopener" class="shop-btn btn-amazon" title="Find on Amazon">
+          <i class="fa-brands fa-amazon"></i> Amazon
+        </a>
+      </div>
+    </div>
+
+    <!-- 15. Giant Oozing Egg Yolk Squishy -->
+    <div class="product-card" data-category="squishy">
+      <div class="product-top">
+        <div>
+          <span class="prod-tag tag-squishy">SqueezeCraft • Oozing Sensory Ball</span>
+          <h2 class="prod-title">Giant Oozing Egg Yolk Stress Ball Squishy</h2>
+        </div>
+      </div>
+      <p class="prod-desc">Clear elastic bubble with a free-floating ultra-soft golden yolk that squishes and pops through your fingers without bursting.</p>
+      <div class="btn-row">
+        <a href="https://www.tiktok.com/@squeezecraft" target="_blank" rel="noopener" class="shop-btn btn-tiktok">
+          <i class="fa-brands fa-tiktok"></i> TikTok Shop
+        </a>
+        <a href="https://www.amazon.com/s?k=oozing+egg+yolk+squishy&tag=miafinds-20" target="_blank" rel="noopener" class="shop-btn btn-amazon" title="Find on Amazon">
+          <i class="fa-brands fa-amazon"></i> Amazon
+        </a>
+      </div>
+    </div>
+
+    <!-- 16. Glitter Swirl Water Snake -->
+    <div class="product-card" data-category="squishy">
+      <div class="product-top">
+        <div>
+          <span class="prod-tag tag-squishy">RetroSensory • Uncatchable Water Tube</span>
+          <h2 class="prod-title">Glitter Swirl Water Snake Slippery Sensory Toy</h2>
+        </div>
+      </div>
+      <p class="prod-desc">Filled with sparkling micro-glitter and soothing blue fluid that slips through your hands the second you squeeze it.</p>
+      <div class="btn-row">
+        <a href="https://www.tiktok.com/@retrosensory" target="_blank" rel="noopener" class="shop-btn btn-tiktok">
+          <i class="fa-brands fa-tiktok"></i> TikTok Shop
+        </a>
+        <a href="https://www.amazon.com/s?k=glitter+water+snake+sensory+toy&tag=miafinds-20" target="_blank" rel="noopener" class="shop-btn btn-amazon" title="Find on Amazon">
+          <i class="fa-brands fa-amazon"></i> Amazon
+        </a>
+      </div>
+    </div>
+
+    <!-- 17. Viral Vaseline Swiss Cheese Squishy -->
+    <div class="product-card" data-category="squishy">
+      <div class="product-top">
+        <div>
+          <span class="prod-tag tag-squishy">NUMNUM ASMR • Textured Sensory Cube</span>
+          <h2 class="prod-title">Viral Vaseline Swiss Cheese Squishy Cube</h2>
+        </div>
+      </div>
+      <p class="prod-desc">Tactile squishy cube with realistic aerated swiss cheese texture and matte coating for ultra-satisfying tactile desk ASMR.</p>
+      <div class="btn-row">
+        <a href="https://www.tiktok.com/@mia.viral.finds/video/7697535014203968798" target="_blank" rel="noopener" class="shop-btn btn-video" title="Watch Video Review">
+          <i class="fa-solid fa-play"></i> Watch
+        </a>
+        <a href="https://www.tiktok.com/@numnum_asmr" target="_blank" rel="noopener" class="shop-btn btn-tiktok">
+          <i class="fa-brands fa-tiktok"></i> TikTok Shop
+        </a>
+        <a href="https://www.amazon.com/s?k=swiss+cheese+squishy+sensory&tag=miafinds-20" target="_blank" rel="noopener" class="shop-btn btn-amazon" title="Find on Amazon">
+          <i class="fa-brands fa-amazon"></i> Amazon
+        </a>
+      </div>
+    </div>
+
+    
+    <!-- Interactive Sponsorship & Spark Ad Rate Card Section -->
+    <div class="business-card" style="border-color: rgba(32, 213, 236, 0.4); background: linear-gradient(135deg, rgba(32, 213, 236, 0.08) 0%, rgba(255, 59, 92, 0.08) 100%);">
+      <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+        <h3 style="font-size: 16px; font-weight: 700; color: #fff;"><i class="fa-solid fa-bolt" style="color: var(--accent-cyan);"></i> 2026 Brand Collab & Rate Card</h3>
+        <span style="background: rgba(32, 213, 236, 0.2); color: var(--accent-cyan); font-size: 11px; padding: 2px 8px; border-radius: 999px; font-weight: 700;">VTR &gt; 42%</span>
+      </div>
+      <p class="prod-desc" style="margin-bottom: 12px;">Direct commercial licensing &amp; showcase rates for TikTok Shop, Amazon sellers, and DTC brands:</p>
+      
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 14px;">
+        <div style="background: rgba(0,0,0,0.3); padding: 10px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08);">
+          <div style="font-size: 11px; color: var(--text-muted); text-transform: uppercase;">30-Day Spark Ad</div>
+          <div style="font-size: 18px; font-weight: 800; color: #fff; margin-top: 2px;">$250 - $500</div>
+          <div style="font-size: 10px; color: var(--accent-cyan); margin-top: 4px;">Code in &lt; 60s</div>
+        </div>
+        <div style="background: rgba(0,0,0,0.3); padding: 10px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08);">
+          <div style="font-size: 11px; color: var(--text-muted); text-transform: uppercase;">Shop Showcase</div>
+          <div style="font-size: 18px; font-weight: 800; color: #fff; margin-top: 2px;">25% - 35%</div>
+          <div style="font-size: 10px; color: #34d399; margin-top: 4px;">Zero upfront fee</div>
+        </div>
+      </div>
+
+      <div class="btn-row">
+        <a href="dealroom.html" class="shop-btn" style="background: linear-gradient(135deg, var(--accent-cyan), #00b4d8); color: #0b0c10; font-weight: 800;">
+          <i class="fa-solid fa-chart-pie"></i> View Full Media Kit &amp; Deal Room
+        </a>
+        <a href="mailto:miaviralfinds@gmail.com?subject=Brand%20Sponsorship%20Booking%20-%20Mia%20Finds" class="shop-btn tt-btn" style="background: linear-gradient(135deg, var(--accent-pink), #e02447);">
+          <i class="fa-solid fa-handshake"></i> Book Brand Collab ($250 - $500)
+        </a>
+      </div>
+    </div>
+
+    <!-- ============================================== -->
+    <!-- SECTION 4: BUSINESS & BRAND PARTNERSHIPS       -->
+    <!-- ============================================== -->
+    <div class="section-title">
+      <i class="fa-solid fa-handshake" style="color: #818cf8;"></i> Creator Partnerships & Press
+    </div>
+
+    <div class="product-card business-card">
+      <div class="product-top">
+        <div>
+          <span class="prod-tag" style="color: #a5b4fc; background: rgba(99, 102, 241, 0.2);">Brands & PR Desks</span>
+          <h2 class="prod-title">Collaborate with Mia Viral Finds</h2>
+        </div>
+      </div>
+      <p class="prod-desc">We produce high-conversion organic UGC & Spark Ads for TikTok Shop, Amazon storefronts, and DTC brands. Contact our management desk for sample gifting, sponsorship rates, and whitelisting.</p>
+      <div class="btn-row">
+        <a href="mailto:miaviralfinds@gmail.com?subject=Brand%20Partnership%20Inquiry%20-%20Mia%20Finds" class="shop-btn business-btn">
+          <i class="fa-solid fa-envelope"></i> Inquire via Email (miaviralfinds@gmail.com)
+        </a>
+      </div>
+    </div>
+
+    <!-- FTC Affiliate Disclosure & Copyright -->
+    <footer class="footer">
+      <p><strong>FTC Disclosure:</strong> As an Amazon Associate, I earn from qualifying purchases made through links on this page at zero additional cost to you (Amazon Store ID: <code>miafinds-20</code>). We only recommend products tested and loved by our team.</p>
+      <p style="margin-top: 8px;">© 2026 Mia Viral Finds (@miaviralfinds). All rights reserved.</p>
+    </footer>
+
+  </div>
+
+  <script>
+    function filterCategory(cat, btn) {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const cards = document.querySelectorAll('.product-card[data-category]');
+      const headers = document.querySelectorAll('.category-header');
+
+      if (cat === 'all') {
+        cards.forEach(c => c.style.display = 'flex');
+        headers.forEach(h => h.style.display = 'flex');
+      } else if (cat === 'highticket') {
+        cards.forEach(c => {
+          c.style.display = (c.getAttribute('data-highticket') === 'true') ? 'flex' : 'none';
+        });
+        headers.forEach(h => {
+          h.style.display = (h.getAttribute('data-cat') === 'beauty' || h.getAttribute('data-cat') === 'kitchen') ? 'flex' : 'none';
+        });
+      } else {
+        cards.forEach(c => {
+          c.style.display = (c.getAttribute('data-category') === cat) ? 'flex' : 'none';
+        });
+        headers.forEach(h => {
+          h.style.display = (h.getAttribute('data-cat') === cat) ? 'flex' : 'none';
+        });
+      }
+    }
+  </script>
+
+</body>
+</html>
